@@ -1,6 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <color name="primary_login">#E43F3F</color>
+    <color name="primary_dark_login">#E12929</color>
+    <color name="primary_darker_login">#CC1D1D</color>
+    <color name="accent_login">#FFFFFF</color>
+
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="lightWhite">#fff4ff</color>
+    <color name="trans_white">#9dffffff</color>
+    <color name="red">#e51c23</color>
+    <color name="trans_red">#9dff4500</color>
+    <color name="pink">#e91e63</color>
+    <color name="purple">#9c27b0</color>
+    <color name="deepPurple">#673ab7</color>
+    <color name="indigo">#3f51b5</color>
+    <color name="blue">#5677fc</color>
+    <color name="lightBlue">#03a9f4</color>
+    <color name="cyan">#00bcd4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#77b82c</color>
+    <color name="lightGreen">#8bc34a</color>
+    <color name="lime">#cddc39</color>
+    <color name="yellow">#ffeb3b</color>
+    <color name="amber">#ffc107</color>
+    <color name="trans_amber">#5dff5722</color>
+    <color name="orange">#ff9800</color>
+    <color name="deepOrange">#ff5722</color>
+    <color name="trans_deepOrange">#5dff5722</color>
+    <color name="brown">#795548</color>
+    <color name="grey">#9e9e9e</color>
+    <color name="blueGrey">#607d8b</color>
+    <color name="ghostwhite">#F8F8FF</color>
+    <color name="trans_pink">#9df8bbd0</color>
+    <!--
+      <color name="bg_app">#ececec</color>
+      <color name="bg_back">#cbcac8</color>
+      <color name="bg_btn">#77b82c</color>
+      <color name="bg_btn_gray">#a9a8a4</color>
+      <color name="list_divide">#aaaaaa</color>
+      <color name="bg_draw_menu">#000000</color>
+
+      &lt;!&ndash;  &ndash;&gt;
+      <color name="black_default">#222222</color>
+      <color name="gray_text_default">#7D7D7D</color>
+      <color name="gray_default">#ACACAC</color>
+      <color name="bg_btn_delivery_return">#222222</color>
+      <color name="bg_btn_delivered">#ACACAC</color>
+      <color name="bg_btn_delivering">#6FA835</color>
+      <color name="bg_btn_press">#DADADA</color>
+      <color name="text_color_delivered">#7D7D7D</color>
+      &lt;!&ndash; form &ndash;&gt;
+      <color name="widget_edittext">#585858</color>
+      <color name="widget_edittext_hint">#B0B0B0</color>
+
+      <color name="bg_header">#6fa835</color>
+
+      &lt;!&ndash; Commons &ndash;&gt;
+      <color name="background_app">#dedede</color>
+      <color name="background_list_back">#e3e3e3</color>
+      <color name="background_list_front">#ffffff</color>
+      <color name="text_title">#444444</color>
+      <color name="text_description">#7e7e7e</color>
+      <color name="line">#ffbcbcbc</color>
+      <color name="background_new_tag">#ff0000</color>
+      <color name="text_new_tag">#ffffff</color>
+
+      <color name="primary_dark_alpha_50">#8000796B</color>
+      <color name="primary_alpha_50">#80B2DFDB</color>-->
+
+    <color name="primary">#4CAF50</color>
+    <color name="primary_dark">#388E3C</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="text_color_flat">#1E88E5</color>
+    <color name="bg_app">#ececec</color>
+
+    <color name="color_done">#6fa835</color>
+    <color name="color_done_behind">#4CAF50</color>
+
+    <color name="color_error">#FBC02D</color>
+    <color name="color_error_behind">#FFEB3B</color>
+
+    <color name="color_action">#2196F3</color>
+    <color name="color_action_behind">#03A9F4</color>
+
+    <color name="color_special">#F44336</color>
+    <color name="color_special_behind">#FF5722</color>
+
+    <!-- alpha -->
+    <color name="alpha_80_blue">#992196F3</color>
+    <color name="alpha_80_Black">#99212121</color>
+    <color name="alpha_80_green">#994CAF50</color>
+    <color name="alpha_80_white">#B3ececec</color>
+    <color name="alpha_00_white">#0Dececec</color>
+    <!---->
+    <color name="express">#D43127</color>
+    <color name="done">#8B8B8B</color>
+    <color name="pick">#005DAA</color>
+    <color name="delivery">#006325</color>
+    <color name="color_return">#000000</color>
+    <color name="abcx">#e8e8e8</color>
+    <color name="abcx1">#f7f7f7</color>
+    <color name="abcx2">#e8e8e8</color>
+
+    <!--circle progress bar-->
+    <color name="coral_blue">#1DAEFA</color>
+    <color name="coral_blue_pressed">#1A9CE1</color>
+    <color name="dark_blue">#125D9D</color>
+    <color name="dark_blue_pressed">#10538D</color>
+    <color name="mid_circle_blue">#177DC2</color>
+    <color name="select_moment_blue">#4EA2DB</color>
+    <color name="select_moment_blue_pressed">#2D91D4</color>
+    <color name="ppe_button_blue">#2E8BCF</color>
+    <color name="cancel_blue">#125D9D</color>
+    <color name="smartwatch_color">#4ea2db</color>
+    <color name="white_pressed">#E5E5E5</color>
+
+    <color name="light_gray">#ABBAC2</color>
+    <color name="text_gray">#6B767D</color>
 </resources>

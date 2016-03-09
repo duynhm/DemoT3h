@@ -5,4 +5,21 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <!--string module app components-->
+    <string name="btn_services">Services</string>
+    <string name="btn_content_providers">Content Providers</string>
+    <string name="btn_notifications">Notifications</string>
+    <string name="tv_overviews_app_components">Turn on/off network for test Broadcast Receiver.
+    <![CDATA[Note: Must request the following permissions: <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>]]></string>
+
+    <!--string module broadcast receiver-->
+    <string name="notice_disconnect_network">Check your connection and try again.</string>
+    <string name="notice_connected_network">Your connection is connected.</string>
+
+    <!--string module content provider-->
+    <string name="note_use_read_contact"><![CDATA[Note: Must request the following permissions: <uses-permission android:name="android.permission.READ_CONTACTS"/>]]></string>
+
+    <!--shared preferences-->
+    <string name="sample_sharedPref_default">Hello World!</string>
+
 </resources>
