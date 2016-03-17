@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_ui_login2">User Interface/Sample Login 2</string>
+    <string name="title_activity_ui_signup">User Interface/Sample SignUp</string>
+
+    <string name="title_activity_hello_world">01.Hello world</string>
+    <!--module app components-->
+    <string name="title_activity_overview_appcomponents">02.AppComponents/00.Overview</string>
+
+    <!--module app components/ContentProvider-->
+    <string name="title_activity_sample_contact_list1">02.AppComponents/04.Content Providers/Sample Contact List 1</string>
+
+    <!--module Telephone&SMS/Telephone-->
+    <string name="title_activity_sample_call_log">11.Telephones &amp; SMS/01.Telephones/Sample Call Log</string>
+    <!--module storage-->
+    <!--shared preference-->
+    <string name="title_activity_settings">06.Data Storage/01.SharedPreferences/Settings</string>
+    <string name="title_activity_sample_shared_preferences">06.Data Storage/01.SharedPreferences/Sample Shared Preferences</string>
+    <string name="title_activity_sample_file_explorer">06.Data Storage/02. Internal - External/Sample File Explorer</string>
+
+</resources>

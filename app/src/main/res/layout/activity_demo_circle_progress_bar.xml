@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dzumi.app.demo.demot3h.modules.user_interface.views.DemoCircleProgressBar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/eighty_dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_six_sp" />
+
+    <dzumi.app.demo.demot3h.modules.user_interface.views.custom_view.CurvedTextView
+        android:id="@+id/compliance_curved_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingTop="@dimen/ten_dp"
+        android:text="curved_text_value"
+        android:textSize="@dimen/fifteen_sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/circle_progress_background" />
+    <!-- <ProgressBar
+         android:id="@+id/circle_progress_bar"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_centerInParent="true"
+         android:max="100"
+         android:rotation="-90"
+         android:indeterminate="false"
+         android:progressDrawable="@drawable/circle_progress_foreground" />
+ -->
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_centerInParent="true"
+         android:orientation="vertical"
+         android:gravity="center">
+
+         <TextView
+             android:id="@+id/compliance_total_count"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="total_observations"
+             android:gravity="center"
+             android:textSize="@dimen/fourteen_sp"
+             android:textStyle="bold"
+             android:textColor="@color/black" />
+
+         <TextView
+             android:id="@+id/compliance_observations"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textSize="@dimen/twelve_sp"
+             android:text="home_screen_observations"
+             android:paddingBottom="@dimen/five_dp"
+             android:textColor="@color/text_gray" />
+
+         <TextView
+             android:id="@+id/compliance_percentage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textSize="@dimen/fourteen_sp"
+             android:text="percent_value"
+             android:textStyle="bold"
+             android:textColor="@color/black" />
+
+         <TextView
+             android:id="@+id/compliance_observed_compliance"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textSize="@dimen/twelve_sp"
+             android:text="home_screen_observed_compliance"
+             android:paddingBottom="@dimen/ten_dp"
+             android:textColor="@color/text_gray" />
+
+     </LinearLayout>
+ -->
+</RelativeLayout>
