@@ -143,6 +143,6 @@ public class MainActivity extends BaseActivityNav implements MainFragment.IMainA
 
     @Override
     protected boolean isLogLifeCycle() {
-        return false;
+        return true;
     }
 }

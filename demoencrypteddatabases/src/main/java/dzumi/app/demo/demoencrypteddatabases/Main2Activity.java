@@ -10,6 +10,10 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import dzumi.app.demo.demoencrypteddatabases.main.Encryptor;
 
+/**
+ * nhap text --> encrypt ==> show result
+ * nhap text encrypt --> decrypt --> show result
+ */
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener{
 
     @Bind(R.id.btnEncode)

@@ -10,37 +10,59 @@
     tools:context=".Main1Activity">
 
     <ListView
+        android:id="@+id/listView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_below="@+id/container"    />
+        android:layout_below="@+id/container" />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-       />
+        android:layout_below="@+id/layout"/>
 
     <!---->
     <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:id="@+id/container"
-        >
+        android:layout_below="@+id/editText">
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insert"
             android:id="@+id/btnInsert"
-             />
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Load"
-            android:id="@+id/btnLoad"
-            />
+            android:text="Insert" />
+
+        <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load" />
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
     </LinearLayout>
 
 
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <Button
+            android:id="@+id/btnDBEncryptContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DB Encrypt Content" />
+
+        <Button
+            android:id="@+id/btnDBEncryptFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DB Encrypt File" />
+    </LinearLayout>
 </RelativeLayout>
