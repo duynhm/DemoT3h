@@ -18,4 +18,7 @@
     <string name="title_activity_sample_shared_preferences">06.Data Storage/01.SharedPreferences/Sample Shared Preferences</string>
     <string name="title_activity_sample_file_explorer">06.Data Storage/02. Internal - External/Sample File Explorer</string>
 
+    <!--module admod ads-->
+    <string name="title_activity_banner_ads">12.Google admod/Ads Banner</string>
+    <string name="title_activity_ads_interstital">12.Google admod/Ads Interstital Activity</string>
 </resources>

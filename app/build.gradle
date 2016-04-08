@@ -1,13 +1,15 @@
+//import android.webkit.URLUtil
+
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
 
     defaultConfig {
         applicationId "dzumi.app.demo.demot3h"
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -25,10 +27,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.2.0'
-    compile 'com.android.support:design:23.2.0'
-    compile 'com.android.support:support-v4:23.2.0'
-    compile 'com.android.support:support-v13:23.2.0'
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+    Map<String, String> dependencies = rootProject.ext.dependencies;
+
+    testCompile dependencies.jUnit
+    compile dependencies.cardView
+    compile dependencies.recyclerView
+    compile dependencies.supportDesign
+    compile dependencies.supportv4
+    compile dependencies.supportv13
+
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
 }

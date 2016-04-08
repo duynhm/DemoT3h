@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "dzumi.android.demo.personallibrarymanager"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+    Map<String, String> dependencies = rootProject.ext.dependencies;
+    testCompile dependencies.jUnit
+    compile dependencies.appCompat
+    compile dependencies.supportDesign
+    compile dependencies.gson
+}

@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/demoencrypteddatabases/demoencrypteddatabases.iml" filepath="$PROJECT_DIR$/demoencrypteddatabases/demoencrypteddatabases.iml" />
       <module fileurl="file://$PROJECT_DIR$/demot3h.iml" filepath="$PROJECT_DIR$/demot3h.iml" />
+      <module fileurl="file://$PROJECT_DIR$/personallibrarymanager/personallibrarymanager.iml" filepath="$PROJECT_DIR$/personallibrarymanager/personallibrarymanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/readnews/readnews.iml" filepath="$PROJECT_DIR$/readnews/readnews.iml" />
     </modules>
   </component>
 </project>

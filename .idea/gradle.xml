@@ -10,6 +10,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/demoencrypteddatabases" />
+            <option value="$PROJECT_DIR$/personallibrarymanager" />
+            <option value="$PROJECT_DIR$/readnews" />
           </set>
         </option>
         <option name="myModules">
@@ -17,6 +19,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/demoencrypteddatabases" />
+            <option value="$PROJECT_DIR$/personallibrarymanager" />
+            <option value="$PROJECT_DIR$/readnews" />
           </set>
         </option>
       </GradleProjectSettings>

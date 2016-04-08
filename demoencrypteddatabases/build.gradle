@@ -25,9 +25,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+    Map<String, String> dependencies = rootProject.ext.dependencies;
+
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.2.1'
-    compile 'com.jakewharton:butterknife:7.0.1'
+    compile dependencies.appCompat
+    compile dependencies.butterKnife
     compile 'net.zetetic:android-database-sqlcipher:3.3.1-2'
 }

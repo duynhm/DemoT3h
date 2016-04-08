@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        applicationId "dzumi.android.demo.readnews"
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //    compile fileTree(dir: 'libs', include: ['*.jar'])
+    Map<String, String> dependencies = rootProject.ext.dependencies
+    testCompile dependencies.jUnit
+    compile dependencies.appCompat
+    compile dependencies.cardView
+    compile dependencies.supportDesign
+    compile dependencies.prettytime
+    compile dependencies.picasso
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile('com.stanfy:gson-xml-java:0.1.+') {
+        exclude group: 'xmlpull', module: 'xmlpull'
+    }
+}
