@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/demoencrypteddatabases/demoencrypteddatabases.iml" filepath="$PROJECT_DIR$/demoencrypteddatabases/demoencrypteddatabases.iml" />
       <module fileurl="file://$PROJECT_DIR$/demot3h.iml" filepath="$PROJECT_DIR$/demot3h.iml" />
       <module fileurl="file://$PROJECT_DIR$/personallibrarymanager/personallibrarymanager.iml" filepath="$PROJECT_DIR$/personallibrarymanager/personallibrarymanager.iml" />

@@ -1,1 +1,1 @@
-include ':app', ':demoencrypteddatabases', ':personallibrarymanager', ':readnews'
+include ':app', ':demoencrypteddatabases', ':personallibrarymanager', ':readnews', ':backend'

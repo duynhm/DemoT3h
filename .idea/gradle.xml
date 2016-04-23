@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/demoencrypteddatabases" />
             <option value="$PROJECT_DIR$/personallibrarymanager" />
             <option value="$PROJECT_DIR$/readnews" />
@@ -18,6 +19,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/demoencrypteddatabases" />
             <option value="$PROJECT_DIR$/personallibrarymanager" />
             <option value="$PROJECT_DIR$/readnews" />
