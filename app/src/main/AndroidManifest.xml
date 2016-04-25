@@ -169,7 +169,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.resource.SupportMultiLangActivity"></activity>
+        <activity android:name=".modules.resource.SupportMultiLangActivity" />
+        <activity android:name=".modules.resource.DemoValuesResActivity"
+            android:label="@string/title_activity_resource_value"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

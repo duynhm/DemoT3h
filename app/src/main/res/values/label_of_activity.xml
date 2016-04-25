@@ -21,4 +21,7 @@
     <!--module admod ads-->
     <string name="title_activity_banner_ads">12.Google admod/Ads Banner</string>
     <string name="title_activity_ads_interstital">12.Google admod/Ads Interstital Activity</string>
+
+    <!--module resouce-->
+    <string name="title_activity_resource_value">Resouce/Demo Value</string>
 </resources>

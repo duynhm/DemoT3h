@@ -51,9 +51,9 @@ public class Login extends HttpServlet {
                 jb.append(line);
         } catch (Exception e) {
         }
-
+        JSONObject jsonObject = null;
         try {
-            JSONObject jsonObject = new JSONObject(jb.toString());
+            jsonObject = new JSONObject(jb.toString());
             String userName = jsonObject.getString("user_name");
             String pass = jsonObject.getString("pass");
 
@@ -63,7 +63,7 @@ public class Login extends HttpServlet {
                 resp.getWriter().print(getJson("Tai khoan hoac mat khau khong hop le", STATUS_ERROR, null ));
         } catch (JSONException e) {
             e.printStackTrace();
-            resp.getWriter().print(getJson("Loi he thong", STATUS_ERROR, null ));
+            resp.getWriter().print(getJson("Loi he thong: " + jsonObject.toString(), STATUS_ERROR, null ));
         }
     }
 }

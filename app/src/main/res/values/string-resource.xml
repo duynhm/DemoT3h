@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="text_support_multi_lang">English</string>
+
+    <!--resource-->
+    <string name="good_double_quoted_string">\" double quoted string\"</string>
+    <string name="bad_double_quoted_string">" double quoted string "</string>
+    <string name="good_quoted_string">"quoted 'xyz' string"</string>
+
+    <string name="res_string_format">Hi %1$s! You have %2$d message(s).</string>
+    <string name="html_character">Hello <b>Android</b></string>
+
+    <plurals name="res_plurals_format">
+        <item quantity="one">You have a message.</item>
+        <item quantity="other">
+            You have %d messages.
+        </item>
+    </plurals>
 </resources>

@@ -1,7 +1,21 @@
 //import android.webkit.URLUtil
 
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
 
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+    }
+}
+
+// Required because retrolambda is on maven central
+repositories {
+    mavenCentral()
+}
 android {
     compileSdkVersion rootProject.ext.androidCompileSdkVersion
     buildToolsVersion rootProject.ext.androidBuildToolsVersion
@@ -24,6 +38,11 @@ android {
             proguardFiles file('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -38,4 +57,10 @@ dependencies {
     compile dependencies.supportv13
 
     compile 'com.google.android.gms:play-services-ads:8.4.0'
+
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
 }

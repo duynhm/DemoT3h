@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="text_support_multi_lang">Tiếng Việt</string>
+
+    <!--resource-->
+    <string name="good_double_quoted_string">\" double quoted string\"</string>
+    <string name="bad_double_quoted_string">" double quoted string "</string>
+    <string name="good_quoted_string">"quoted 'xyz' string"</string>
+    <!--<string name="bad_quoted_string">quoted 'xyz' string</string>-->
+    <string name="character"> A &amp; B </string>
+    <string name="html_character">Xin chào <b>Android</b></string>
+    <string name="res_string_format">Xin chào %1$s! Bạn có %2$d tin nhắn.</string>
+
+    <plurals name="res_plurals_format">
+        <item quantity="other">
+            Bạn có %d tin nhắn.
+        </item>
+    </plurals>
 </resources>

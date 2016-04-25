@@ -36,7 +36,5 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
     compile 'io.reactivex:rxandroid:1.1.0'
-    compile('com.stanfy:gson-xml-java:0.1.+') {
-        exclude group: 'xmlpull', module: 'xmlpull'
-    }
+
 }
