@@ -9,6 +9,7 @@ buildscript {
 
     dependencies {
         classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
 
@@ -44,23 +45,22 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
+apply plugin: 'com.neenbedankt.android-apt'
 dependencies {
-//    compile fileTree(include: ['*.jar'], dir: 'libs')
-    Map<String, String> dependencies = rootProject.ext.dependencies;
-
+    //    compile fileTree(include: ['*.jar'], dir: 'libs')
+    Map<String, String> dependencies = rootProject.ext.dependencies
     testCompile dependencies.jUnit
     compile dependencies.cardView
     compile dependencies.recyclerView
     compile dependencies.supportDesign
     compile dependencies.supportv4
     compile dependencies.supportv13
-
     compile 'com.google.android.gms:play-services-ads:8.4.0'
-
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
     compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
 }

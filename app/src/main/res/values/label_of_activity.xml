@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--module ui-->
+    <string name="title_activity_ui_demo_listview1">User Interface/Adapter View/Demo List View 1</string>
+    <string name="title_activity_ui_demo_listview2">User Interface/Adapter View/Demo List View 2</string>
+    <string name="title_activity_ui_demo_listview3">User Interface/Adapter View/Demo List View 3</string>
+    <string name="title_activity_ui_demo_listview4">User Interface/Adapter View/Demo List View 4</string>
     <string name="title_activity_ui_login2">User Interface/Sample Login 2</string>
     <string name="title_activity_ui_signup">User Interface/Sample SignUp</string>
 
@@ -24,4 +29,6 @@
 
     <!--module resouce-->
     <string name="title_activity_resource_value">Resouce/Demo Value</string>
+
+
 </resources>

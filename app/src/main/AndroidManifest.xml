@@ -170,15 +170,38 @@
             </intent-filter>
         </activity>
         <activity android:name=".modules.resource.SupportMultiLangActivity" />
-        <activity android:name=".modules.resource.DemoValuesResActivity"
-            android:label="@string/title_activity_resource_value"
-            >
+        <activity
+            android:name=".modules.resource.DemoValuesResActivity"
+            android:label="@string/title_activity_resource_value">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
+        </activity>
+        <activity android:name=".modules.user_interface.adapter_view.DemoListView1"
+            android:label="@string/title_activity_ui_demo_listview1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.user_interface.adapter_view.DemoListView2"
+            android:label="@string/title_activity_ui_demo_listview2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.user_interface.adapter_view.DemoListView3"
+            android:label="@string/title_activity_ui_demo_listview3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
         </activity>
     </application>
 

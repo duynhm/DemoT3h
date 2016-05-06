@@ -104,6 +104,7 @@ public class SampleCallLog extends AppCompatActivity {
                     // result of the request.
 
 
+
                     return;
                 }
                 call();
@@ -206,9 +207,7 @@ public class SampleCallLog extends AppCompatActivity {
         msgFilter.setNext(logFragment.getLogView());
 
         Log.i(TAG_LOG, "Ready");
-    }
-
-    private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
+    } private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
         new AlertDialog.Builder(this)
                 .setMessage(message)
                 .setPositiveButton("OK", okListener)
@@ -216,4 +215,6 @@ public class SampleCallLog extends AppCompatActivity {
                 .create()
                 .show();
     }
+
+
 }

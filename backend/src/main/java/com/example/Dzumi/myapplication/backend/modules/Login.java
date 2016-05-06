@@ -11,6 +11,8 @@ import com.example.Dzumi.myapplication.backend.lib.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,6 +41,17 @@ public class Login extends HttpServlet {
         }
         return jsonObject;
     }
+
+    Map<String,String> users;
+
+    void initUsers(){
+        users = new HashMap<>();
+        users.put("t3h", "t3h");
+        users.put("admin", "123456");
+        users.put("locnguyen", "123456");
+        users.put("duynguyen", "123456");
+
+    }
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
@@ -57,7 +70,11 @@ public class Login extends HttpServlet {
             String userName = jsonObject.getString("user_name");
             String pass = jsonObject.getString("pass");
 
-            if(pass.equals("t3h") && userName.equals("t3h")){
+            initUsers();
+
+//            if(pass.equals("t3h") && userName.equals("t3h")){
+            String val = users.get(userName);
+            if(val != null && val.equals(pass)){
                 resp.getWriter().print(getJson(null, STATUS_SUCCESS, TOKEN ));
             }else
                 resp.getWriter().print(getJson("Tai khoan hoac mat khau khong hop le", STATUS_ERROR, null ));
