@@ -18,6 +18,7 @@
     <!--module Telephone&SMS/Telephone-->
     <string name="title_activity_sample_call_log">11.Telephones &amp; SMS/01.Telephones/Sample Call Log</string>
     <!--module storage-->
+    <string name="title_activity_storage_read_write_file">06.Data Storage/02. Internal - External/Read &amp; Write Internal File </string>
     <!--shared preference-->
     <string name="title_activity_settings">06.Data Storage/01.SharedPreferences/Settings</string>
     <string name="title_activity_sample_shared_preferences">06.Data Storage/01.SharedPreferences/Sample Shared Preferences</string>

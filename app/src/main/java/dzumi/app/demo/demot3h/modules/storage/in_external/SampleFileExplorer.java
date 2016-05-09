@@ -34,7 +34,9 @@ public class SampleFileExplorer extends AppCompatActivity implements AdapterView
 
         listView = (ListView) findViewById(R.id.listView);
         listView.setOnItemClickListener(this);
+        //lay duong dan root cua external
         mPath = Environment.getExternalStorageDirectory().getPath();
+
         tvPath = (TextView) findViewById(R.id.textPath);
 
         getDirectory(mPath);

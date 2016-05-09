@@ -1,0 +1,9 @@
+apply plugin: 'java'
+repositories {
+    maven { url 'https://oss.jfrog.org/libs-snapshot' }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'io.reactivex:rxjava:1.1.5'
+}

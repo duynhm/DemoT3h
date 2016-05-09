@@ -179,7 +179,8 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.user_interface.adapter_view.DemoListView1"
+        <activity
+            android:name=".modules.user_interface.adapter_view.DemoListView1"
             android:label="@string/title_activity_ui_demo_listview1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -187,7 +188,8 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.user_interface.adapter_view.DemoListView2"
+        <activity
+            android:name=".modules.user_interface.adapter_view.DemoListView2"
             android:label="@string/title_activity_ui_demo_listview2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -195,8 +197,19 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.user_interface.adapter_view.DemoListView3"
-            android:label="@string/title_activity_ui_demo_listview3">
+        <activity
+            android:name=".modules.user_interface.adapter_view.DemoListView3"
+            android:label="@string/title_activity_ui_demo_listview3"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.network.gson.DemoGson" />
+        <activity android:name=".modules.storage.in_external.ReadWriteFileInternalActivity"
+            android:label="@string/title_activity_storage_read_write_file">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,1 +1,1 @@
-include ':app', ':demoencrypteddatabases', ':personallibrarymanager', ':readnews', ':backend'
+include ':app', ':demoencrypteddatabases', ':personallibrarymanager', ':readnews', ':backend', ':demorxjava'

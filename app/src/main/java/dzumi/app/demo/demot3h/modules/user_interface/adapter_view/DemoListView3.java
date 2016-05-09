@@ -8,12 +8,14 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import dzumi.app.demo.demot3h.R;
 import dzumi.app.demo.demot3h.model.Country;
 
 public class DemoListView3 extends AppCompatActivity {
 
-//    @BindView(R.id.listView)
+    @BindView(R.id.listView)
     ListView listView;
 
     List<Country> countries;
@@ -22,8 +24,7 @@ public class DemoListView3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo_list_view1);
 
-//        ButterKnife.bind(this);
-        listView = (ListView) findViewById(R.id.listView);
+        ButterKnife.bind(this);
         initData();
 
         CountryAdapterSimple1 adapter = new CountryAdapterSimple1(this,
