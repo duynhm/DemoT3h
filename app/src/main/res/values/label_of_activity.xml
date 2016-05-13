@@ -31,5 +31,7 @@
     <!--module resouce-->
     <string name="title_activity_resource_value">Resouce/Demo Value</string>
 
+    <!--intent-->
+    <string name="title_activity_intent_login">Intent/Login</string>
 
 </resources>

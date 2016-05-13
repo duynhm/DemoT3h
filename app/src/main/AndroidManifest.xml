@@ -208,7 +208,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".modules.network.gson.DemoGson" />
-        <activity android:name=".modules.storage.in_external.ReadWriteFileInternalActivity"
+        <activity
+            android:name=".modules.storage.in_external.ReadWriteFileInternalActivity"
             android:label="@string/title_activity_storage_read_write_file">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -216,6 +217,20 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
+
+        <!--intent-->
+        <activity
+            android:name=".modules.intent.LoginActivity"
+            android:label="@string/title_activity_intent_login"
+            android:theme="@style/AppTheme.DarkLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.intent.MainIntentActivity" />
+        <activity android:name=".modules.intent.EditContentActivity"></activity>
     </application>
 
 </manifest>

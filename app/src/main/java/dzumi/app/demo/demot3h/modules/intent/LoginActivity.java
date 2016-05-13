@@ -46,7 +46,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the Signup activity
-                Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
+                Intent intent = new Intent(getApplicationContext(),
+                        SignupActivity.class);
                 startActivityForResult(intent, REQUEST_SIGNUP);
             }
         });
@@ -106,6 +107,9 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         btnLogin.setEnabled(true);
+        Intent intent = new Intent(this, MainIntentActivity.class);
+        intent.putExtra("email", edtEmail.getText().toString());
+        startActivity(intent);
         finish();
     }
 
