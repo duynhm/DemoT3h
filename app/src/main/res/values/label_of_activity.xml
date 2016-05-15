@@ -11,7 +11,8 @@
     <string name="title_activity_hello_world">01.Hello world</string>
     <!--module app components-->
     <string name="title_activity_overview_appcomponents">02.AppComponents/00.Overview</string>
-
+    <string name="title_activity_fragment_demo_fragment1">02.AppComponents/Activity/Demo Fragment 1</string>
+    <string name="title_activity_fragment_demo_viewpager">02.AppComponents/Activity/Demo View Pager</string>
     <!--module app components/ContentProvider-->
     <string name="title_activity_sample_contact_list1">02.AppComponents/04.Content Providers/Sample Contact List 1</string>
 

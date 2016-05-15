@@ -218,7 +218,7 @@
             </intent-filter>
         </activity>
 
-        <!--intent-->
+        <!-- intent -->
         <activity
             android:name=".modules.intent.LoginActivity"
             android:label="@string/title_activity_intent_login"
@@ -230,7 +230,24 @@
             </intent-filter>
         </activity>
         <activity android:name=".modules.intent.MainIntentActivity" />
-        <activity android:name=".modules.intent.EditContentActivity"></activity>
+        <activity android:name=".modules.intent.EditContentActivity" />
+        <activity
+            android:name=".modules.app_components.activities.fragments.DemoFragmentActivity"
+            android:label="@string/title_activity_fragment_demo_fragment1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.app_components.activities.fragments.DemoViewPagerActivity"
+            android:label="@string/title_activity_fragment_demo_viewpager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
