@@ -39,4 +39,9 @@
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="title_activity_activity_demo_fragment">ActivityDemoFragment</string>
 
+    <!--practice1-->
+    <string name="tab_login">Login</string>
+    <string name="tab_register">Register</string>
+    <string name="title_activity_practice_main">PracticeMain</string>
+    <string name="title_hello">Hello %ssss</string>
 </resources>

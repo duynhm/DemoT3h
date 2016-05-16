@@ -240,7 +240,8 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.app_components.activities.fragments.DemoViewPagerActivity"
+        <activity
+            android:name=".modules.app_components.activities.fragments.DemoViewPagerActivity"
             android:label="@string/title_activity_fragment_demo_viewpager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -248,6 +249,20 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".modules.practice1.SignActivity"
+            android:label="@string/title_activity_practice_practice1"
+            android:theme="@style/AppTheme.DarkLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.practice1.PracticeMain"
+            android:label="@string/title_activity_practice_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
