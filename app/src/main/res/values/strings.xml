@@ -19,6 +19,7 @@
     <!--string module content provider-->
     <string name="note_use_read_contact"><![CDATA[Note: Must request the following permissions: <uses-permission android:name="android.permission.READ_CONTACTS"/>]]></string>
 
+    <!--sqlite-->
     <!--shared preferences-->
     <string name="sample_sharedPref_default">Hello World!</string>
 
@@ -44,4 +45,6 @@
     <string name="tab_register">Register</string>
     <string name="title_activity_practice_main">PracticeMain</string>
     <string name="title_hello">Hello %ssss</string>
+
+
 </resources>

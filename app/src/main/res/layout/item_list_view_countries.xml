@@ -9,6 +9,7 @@
         android:id="@+id/ivFlag"
         android:layout_width="64dp"
         android:layout_height="64dp"
+        android:background="#ff00ff"
         android:layout_alignParentLeft="true"/>
 
     <LinearLayout
