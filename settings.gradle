@@ -1,1 +1,1 @@
-include ':app', ':demoencrypteddatabases', ':personallibrarymanager', ':readnews', ':backend', ':demorxjava'
+include ':app', ':demoencrypteddatabases', ':personallibrarymanager', ':readnews', ':backend', ':demorxjava', ':demosocketio', ':testapi', ':networklib'

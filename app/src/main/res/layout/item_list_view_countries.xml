@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="64dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="4dp">
 
     <ImageView
         android:id="@+id/ivFlag"

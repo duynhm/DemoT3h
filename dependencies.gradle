@@ -1,7 +1,7 @@
 ext {
     supportLibraryVersion = '24.0.0-alpha1'
-    retrofitVersion = '2.0.0-beta2'
-
+    RETROFIT_VERSION = '2.0.2'
+    OKHTTP_VERSION = '3.2.0'
     dependencies = [
             appCompat: "com.android.support:appcompat-v7:$supportLibraryVersion",
             supportv4: "com.android.support:support-v4:$supportLibraryVersion",
@@ -12,8 +12,15 @@ ext {
             gson: 'com.google.code.gson:gson:2.6.2',
             picasso: 'com.squareup.picasso:picasso:2.5.2',
             jUnit: 'junit:junit:4.12',
-            butterKnife: 'com.jakewharton:butterknife:7.0.1',
-            prettytime: 'org.ocpsoft.prettytime:prettytime:3.2.7.Final'
-
+            butterKnife: 'com.jakewharton:butterknife:8.0.1',
+            prettytime: 'org.ocpsoft.prettytime:prettytime:3.2.7.Final',
+            retrofit: "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION",
+            rxjava: "com.squareup.retrofit2:adapter-rxjava:$RETROFIT_VERSION",
+            converter_gson: "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION",
+            converter_scalars: "com.squareup.retrofit2:converter-scalars:$RETROFIT_VERSION",
+            okhttp: "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION",
+            url_connection: "com.squareup.okhttp3:okhttp-urlconnection:$OKHTTP_VERSION",
+            logging_interceptor: "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION",
+            rxandroid: 'io.reactivex:rxandroid:1.1.0',
     ]
 }

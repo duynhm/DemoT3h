@@ -21,6 +21,8 @@
     <!--module storage-->
     <!--sqlite db-->
     <string name="title_activity_storage_sqlite_sample1">06.Data Storage/03. SQLite/Sample 1 </string>
+    <string name="title_activity_storage_sqlite_sample2">06.Data Storage/03. SQLite/Sample 2 </string>
+    <string name="title_activity_storage_sqlite_sample3">06.Data Storage/03. SQLite/Sample 3 </string>
     <string name="title_activity_storage_read_write_file">06.Data Storage/02. Internal - External/Read &amp; Write Internal File </string>
     <!--shared preference-->
     <string name="title_activity_settings">06.Data Storage/01.SharedPreferences/Settings</string>

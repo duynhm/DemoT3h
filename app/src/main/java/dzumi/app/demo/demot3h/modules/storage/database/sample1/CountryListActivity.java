@@ -1,4 +1,4 @@
-package dzumi.app.demo.demot3h.modules.storage.database;
+package dzumi.app.demo.demot3h.modules.storage.database.sample1;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -12,13 +12,14 @@ import android.widget.ListView;
 
 import java.io.BufferedInputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import dzumi.app.demo.demot3h.R;
+import dzumi.app.demo.demot3h.modules.storage.database.Country;
+import dzumi.app.demo.demot3h.modules.storage.database.CountryAdapter;
 
 public class CountryListActivity extends AppCompatActivity {
     ListView listView;

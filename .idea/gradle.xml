@@ -12,8 +12,11 @@
             <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/demoencrypteddatabases" />
             <option value="$PROJECT_DIR$/demorxjava" />
+            <option value="$PROJECT_DIR$/demosocketio" />
+            <option value="$PROJECT_DIR$/networklib" />
             <option value="$PROJECT_DIR$/personallibrarymanager" />
             <option value="$PROJECT_DIR$/readnews" />
+            <option value="$PROJECT_DIR$/testapi" />
           </set>
         </option>
         <option name="myModules">
@@ -23,8 +26,11 @@
             <option value="$PROJECT_DIR$/backend" />
             <option value="$PROJECT_DIR$/demoencrypteddatabases" />
             <option value="$PROJECT_DIR$/demorxjava" />
+            <option value="$PROJECT_DIR$/demosocketio" />
+            <option value="$PROJECT_DIR$/networklib" />
             <option value="$PROJECT_DIR$/personallibrarymanager" />
             <option value="$PROJECT_DIR$/readnews" />
+            <option value="$PROJECT_DIR$/testapi" />
           </set>
         </option>
       </GradleProjectSettings>

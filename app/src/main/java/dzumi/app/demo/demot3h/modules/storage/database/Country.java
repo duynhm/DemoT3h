@@ -9,7 +9,12 @@ public class Country {
     public final static String COL_NAME_EN = "nameEn";
     public final static String COL_NAME_VI = "nameVi";
     public final static String COL_FLAG = "flag";
-
+    public final static String CREATE_TABLE = "create table if not exists " +TABLE_NAME+"("
+            + COL_ID + " integer primary key, "
+            + COL_NAME_EN  + " text,"
+            + COL_NAME_VI + " text,"
+            + COL_FLAG + " text)";
+    public final static String DROP_TABLE = "drop table if exists " + TABLE_NAME;
     int _id;
     String nameEn;
     String nameVi;
