@@ -19,7 +19,7 @@ Demo Hướng dẫn lập trình Android
   - Sample 2:
     + Để truyền giá trị (thao tác insert, update) sử dụng đối tượng ContentValues
     + Trong mệnh đề where, để so sánh các điều kiện, cần chú ý kiểu dữ liệu text cần có ''. Ví dụ: 
->database.delete(Country.TABLE_NAME, Country.COL_NAME_EN + " = '" + nameENLastest + "'", null );
+> database.delete(Country.TABLE_NAME, Country.COL_NAME_EN + " = '" + nameENLastest + "'", null );
   - Sample 3:
     + Tạo lớp kế thừa từ SQLiteOpenHelper để quản lý csdl sqlite
     + Phương thức khởi tạo cần truyền DBName, DBVersion -> Tạo Database tại phương thức này nếu DBName chưa tồn tại.
@@ -35,4 +35,18 @@ Demo Hướng dẫn lập trình Android
  
 - Source: /app/src/main/java/dzumi/app/demo/demot3h/modules/storage/database/ 
  
+#Bài 3: Làm quen với csdl sqlite (tt)
+- Nội dung:
+ - Xây dựng project quản lý danh sách quốc gia theo mô hình
+ - Mô hình gợi ý: UI (Activity, Fragment) <--> IDataprovider <--implement-- DataProvder --> DAO --> DB
+
+- Các vấn đề cần lưu ý:
+ - Sử dụng interface để tạo ra nhiều hình thức đối tượng khác nhau (Provider 1 truy cập DB, Provider2 tạo dump DB)
+ - Các phương thức mapContentValues, fetch, fetchAll dùng để sử dụng chung cho nhiều phương thức trong DAO
+
+- Bài tập:
+ - Hoàn thành code tại các vị trí có từ khóa //TODO:
+ - Fix bug nếu có.
+ 
+- Source: demodbprovider/  
 [res]:https://drive.google.com/file/d/0B4o7SM4PhfqWV1lmRnRGc2tWbEE/view?usp=sharing
