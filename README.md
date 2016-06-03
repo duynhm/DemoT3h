@@ -1,7 +1,15 @@
 # DemoT3h
 Demo Hướng dẫn lập trình Android
 
+#Ghi chú
+- Để active module trong project:
+ - 1. Vào file settings.gradle
+ - 2. thêm tên module cần active theo cú pháp:  ':module_name'. 
+   - Ví dụ: include ':app',':demodbprovider'
+
+
 [Tài liệu Bài Tài Nguyên Ứng Dụng][res]
+
 
 #Module 3
 #Bài 1: Làm quen với csdl sqlite
