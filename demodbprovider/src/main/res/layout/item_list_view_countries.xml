@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/ivFlag"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#ff00ff"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/ivFlag"
+      >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="NameVi"
+            android:textColor="#ff0000"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tvNameVi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="tvNameEn"
+            android:id="@+id/tvNameEn"
+            android:textColor="#0000ff"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>
