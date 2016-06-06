@@ -163,11 +163,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".modules.app_components.activities.fragments.DemoStackActivity">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <activity android:name=".modules.resource.SupportMultiLangActivity" />
         <activity
@@ -263,7 +266,8 @@
             android:name=".modules.practice1.PracticeMain"
             android:label="@string/title_activity_practice_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".modules.storage.database.sample1.CountryListActivity"
+        <activity
+            android:name=".modules.storage.database.sample1.CountryListActivity"
             android:label="@string/title_activity_storage_sqlite_sample1"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -272,8 +276,8 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".modules.storage.database.sample2.CountryListActivity"
+        <activity
+            android:name=".modules.storage.database.sample2.CountryListActivity"
             android:label="@string/title_activity_storage_sqlite_sample2"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -282,9 +286,18 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.storage.database.sample3.CountryListActivity"
+        <activity
+            android:name=".modules.storage.database.sample3.CountryListActivity"
             android:label="@string/title_activity_storage_sqlite_sample3"
             android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.app_components.content_provider.DemoContactListActivity"
+            android:label="@string/title_activity_demo_contact_list">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

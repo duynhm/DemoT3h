@@ -15,6 +15,7 @@
     <string name="title_activity_fragment_demo_viewpager">02.AppComponents/Activity/Demo View Pager</string>
     <!--module app components/ContentProvider-->
     <string name="title_activity_sample_contact_list1">02.AppComponents/04.Content Providers/Sample Contact List 1</string>
+    <string name="title_activity_demo_contact_list">02.AppComponents/04.Content Providers/Demo Contact List</string>
 
     <!--module Telephone&SMS/Telephone-->
     <string name="title_activity_sample_call_log">11.Telephones &amp; SMS/01.Telephones/Sample Call Log</string>
