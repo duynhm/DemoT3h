@@ -296,8 +296,35 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.app_components.content_provider.DemoContactListActivity"
+        <activity
+            android:name=".modules.app_components.content_provider.DemoContactListActivity"
             android:label="@string/title_activity_demo_contact_list">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.user_interface.menu.DemoOptionMenu"
+            android:label="@string/title_activity_menu_demo_option_menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.user_interface.menu.DemoFloatingContextMenuActivity"
+            android:label="@string/title_activity_menu_demo_floating_context_menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.user_interface.menu.DemoActionModeActivity"
+            android:label="@string/title_activity_menu_demo_action_mode">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

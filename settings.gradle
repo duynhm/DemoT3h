@@ -1,2 +1,2 @@
-include ':app'
-//, ':demoencrypteddatabases', ':personallibrarymanager', ':readnews', ':backend', ':demorxjava', ':demosocketio', ':testapi', ':networklib'
+include ':app', ':demodbprovider', ':demoencrypteddatabases', ':personallibrarymanager', ':readnews', ':backend', ':demorxjava', ':demosocketio', ':testapi', ':networklib'
+//, ':demodatabinding'

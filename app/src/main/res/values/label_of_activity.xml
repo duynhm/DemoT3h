@@ -8,6 +8,10 @@
     <string name="title_activity_ui_login2">User Interface/Sample Login 2</string>
     <string name="title_activity_ui_signup">User Interface/Sample SignUp</string>
 
+    <string name="title_activity_menu_demo_option_menu">User Interface/Menu/Demo Option Menu</string>
+    <string name="title_activity_menu_demo_floating_context_menu">User Interface/Menu/Demo Floating Context Menu</string>
+    <string name="title_activity_menu_demo_action_mode">User Interface/Menu/Demo Action Mode</string>
+
     <string name="title_activity_hello_world">01.Hello world</string>
     <!--module app components-->
     <string name="title_activity_overview_appcomponents">02.AppComponents/00.Overview</string>
