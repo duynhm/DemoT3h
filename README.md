@@ -57,4 +57,47 @@ Demo Hướng dẫn lập trình Android
  - Fix bug nếu có.
  
 - Source: demodbprovider/  
+
+#Bài 5: Menu
+- Nội dung:
+ - Menu có nhiều loại, thường sử dụng 2 loại chính: 
+   + Option Menu: là menu chính trên một activity.
+   + ContextMenu: menu ngữ cảnh, nghĩa là nó sẽ xuất hiện khi thao tác với một item nào đó. Ví dụ: nhấn giữ lâu vào 1 item trên listView --> xuất hiện menu: xóa hoặc cập nhật. Có 2 loại contextMenu:
+     - Floating ContextMenu --> single choice
+     - Action mode --> multichoice
+	 
+- Các vấn đề cần lưu ý:
+  - Phân biệt thanh ActionBar và thanh ActionMode.
+    + Action Bar chứa option menu
+    + Action mode chứa context menu.
+  - Các vấn đề khi sử dụng option menu: 
+    + Bước 1: create --> onCreateOptionsMenu()
+    + Bước 2: bắt sự kiện --> onOptionsItemSelected()
+
+  - các vấn đề khi sử dụng floating menu:
+    + Bước 1: create -->  onCreateContextMenu()
+    + Bước 2: bắt sự kiện --> onContextItemSelected(). Để lấy được position --> getContextMenuInfo()
+    + Bước 3: (chỉ áp dụng cho contextMenu) đăng kí contextMenu cho View cần sử dụng
+	
+	
+  - Các vấn đề khi sử dụng contextMenu cho ListView:
+    + setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL)
+    + setMultiChoiceModeListener()
+    + Các method trong MultiChoiceModeListener() và sử dụng khi nào.
+    + Tạo điểm nhấn cho item được chọn --> statelist
+    + Để lấy được số lượng item được chọn --> listView.getCheckedItemCount()
+    + Để lấy được position của các item được chọn --> listView.getCheckedItemPositions(). Đây là một mảng chứa n phần tử tương ứng với các item được chọn. Để lấy ra position --> keyAt(index)
+    + Để tương tác với action mode (setTitle, ...) --> thông qua đối tượng ActionMode
+    
+  - Lưu ý: Khi sử dụng actionMode --> ko nên sử dụng kèm floating menu 
+  
+- Bài tập:
+ - Fix bug TODO
+ - Áp dụng vào tập thêm, xóa, sửa countryList
+ 
+- Xem trước:
+ - Xem trước SearchView.         
+- Source:
+ -  /app/src/main/java/dzumi/app/demo/demot3h/modules/user_interface/menu
+
 [res]:https://drive.google.com/file/d/0B4o7SM4PhfqWV1lmRnRGc2tWbEE/view?usp=sharing
