@@ -11,6 +11,7 @@
     <string name="title_activity_menu_demo_option_menu">User Interface/Menu/Demo Option Menu</string>
     <string name="title_activity_menu_demo_floating_context_menu">User Interface/Menu/Demo Floating Context Menu</string>
     <string name="title_activity_menu_demo_action_mode">User Interface/Menu/Demo Action Mode</string>
+    <string name="title_activity_menu_demo_search_view">User Interface/Menu/Demo SearchView</string>
 
     <string name="title_activity_hello_world">01.Hello world</string>
     <!--module app components-->

@@ -323,11 +323,19 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.user_interface.menu.DemoActionModeActivity"
+        <activity
+            android:name=".modules.user_interface.menu.DemoActionModeActivity"
             android:label="@string/title_activity_menu_demo_action_mode">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.user_interface.menu.DemoSearchView"
+            android:label="@string/title_activity_menu_demo_search_view">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
