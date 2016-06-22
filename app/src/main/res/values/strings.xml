@@ -47,4 +47,12 @@
     <string name="title_hello">Hello %ssss</string>
 
 
+    <!--demo animation-->
+    <string name="title_activity_property_animations">PropertyAnimations</string>
+    <string name="alpha">Alpha</string>
+    <string name="translate">Translate</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="set">Set</string>
+
 </resources>

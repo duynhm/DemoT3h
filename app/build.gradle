@@ -55,6 +55,7 @@ dependencies {
     compile dependencies.supportDesign
     compile dependencies.supportv4
     compile dependencies.supportv13
+    compile dependencies.appCompat
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
 
     compile dependencies.retrofit

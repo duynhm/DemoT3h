@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:propertyName="translationX"
+    android:valueTo="-100"
+    android:duration="500"
+    android:startOffset="1000"
+    android:repeatCount="-1"
+    android:repeatMode="reverse"
+    android:interpolator="@android:anim/bounce_interpolator"
+    >
+    
+
+</objectAnimator>

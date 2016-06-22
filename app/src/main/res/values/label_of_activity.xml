@@ -41,7 +41,8 @@
 
     <!--module resouce-->
     <string name="title_activity_resource_value">Resouce/Demo Value</string>
-
+    <string name="title_activity_resource_view_animation">Resource/Animation/View Animation</string>
+    <string name="title_activity_resource_property_animation">Resource/Animation/Property Animation</string>
     <!--intent-->
     <string name="title_activity_intent_login">Intent/Login</string>
 
