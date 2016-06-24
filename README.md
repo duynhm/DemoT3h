@@ -100,4 +100,8 @@ Demo Hướng dẫn lập trình Android
 - Source:
  -  /app/src/main/java/dzumi/app/demo/demot3h/modules/user_interface/menu
 
+#Bài 6: Asynctask - Thread - Handler: 
+[Xem Tại Đây][Module3_Asynctask]
+
+[Module3_Asynctask]: https://github.com/duynhm/DemoT3h/blob/master/guide/Module3-Asyntask.md
 [res]:https://drive.google.com/file/d/0B4o7SM4PhfqWV1lmRnRGc2tWbEE/view?usp=sharing
