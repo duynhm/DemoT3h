@@ -332,30 +332,40 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.user_interface.menu.DemoSearchView"
+        <activity
+            android:name=".modules.user_interface.menu.DemoSearchView"
             android:label="@string/title_activity_menu_demo_search_view">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".modules.resource.animation.ActivityViewAnimations"
+        <activity
+            android:name=".modules.resource.animation.ActivityViewAnimations"
             android:label="@string/title_activity_resource_view_animation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".modules.resource.animation.ActivityPropertyAnimations"
+        <activity
+            android:name=".modules.resource.animation.ActivityPropertyAnimations"
             android:label="@string/title_activity_resource_property_animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.thread.DemoAsyntaskActivity"
+            android:label="@string/title_activity_demo_asyntask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

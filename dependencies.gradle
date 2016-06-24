@@ -1,5 +1,5 @@
 ext {
-    supportLibraryVersion = '24.0.0-alpha1'
+    supportLibraryVersion = '23.4.0'
     RETROFIT_VERSION = '2.0.2'
     OKHTTP_VERSION = '3.2.0'
     dependencies = [

@@ -49,5 +49,7 @@
     <!--practice-->
     <string name="title_activity_practice_practice1">Practice/Practice 1</string>
 
+<!--thread-->
+    <string name="title_activity_demo_asyntask">Thread/Demo Asyntask</string>
 
 </resources>
