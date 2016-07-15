@@ -54,5 +54,7 @@
     <string name="rotate">Rotate</string>
     <string name="scale">Scale</string>
     <string name="set">Set</string>
+    <string name="title_activity_demo_sample_http">Network/Sample Http</string>
+    <string name="title_activity_demo_Rss_Vnexpress">Network/Rss Vnexpress</string>
 
 </resources>

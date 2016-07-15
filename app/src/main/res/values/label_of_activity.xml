@@ -22,6 +22,10 @@
     <string name="title_activity_sample_contact_list1">02.AppComponents/04.Content Providers/Sample Contact List 1</string>
     <string name="title_activity_demo_contact_list">02.AppComponents/04.Content Providers/Demo Contact List</string>
 
+    <!--receiver/service-->
+    <string name="title_activity_demo_receiver">02.AppComponents/Receiver/Demo Broadcast Receiver</string>
+    <string name="title_activity_demo_service">02.AppComponents/Service/Demo Service</string>
+
     <!--module Telephone&SMS/Telephone-->
     <string name="title_activity_sample_call_log">11.Telephones &amp; SMS/01.Telephones/Sample Call Log</string>
     <!--module storage-->
@@ -51,5 +55,6 @@
 
 <!--thread-->
     <string name="title_activity_demo_asyntask">Thread/Demo Asyntask</string>
+    <string name="title_activity_demo_post_delay">Thread/Demo Post Delay</string>
 
 </resources>

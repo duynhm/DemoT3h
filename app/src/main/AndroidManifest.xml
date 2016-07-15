@@ -359,10 +359,62 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.thread.DemoAsyntaskActivity"
+        <activity
+            android:name=".modules.thread.DemoAsyntaskActivity"
             android:label="@string/title_activity_demo_asyntask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.thread.DemoCounterActivity"
+            android:label="@string/title_activity_demo_post_delay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.app_components.broadcast_receiver.ActivitySampleReceiver"
+            android:label="@string/title_activity_demo_receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.app_components.services.ActivityDemoService"
+            android:label="@string/title_activity_demo_service">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".modules.app_components.services.SampleService1" />
+        <service android:name=".modules.app_components.services.SampleService2" />
+        <service android:name=".modules.app_components.services.SampleService3" />
+
+        <receiver android:name=".modules.app_components.broadcast_receiver.NetworkReceiver" />
+
+        <activity android:name=".modules.network.sample_url_http.ReadRss"
+            android:label="@string/title_activity_demo_Rss_Vnexpress">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.network.sample_url_http.DemoSampleHttp"
+            android:label="@string/title_activity_demo_sample_http">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
