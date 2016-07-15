@@ -3,6 +3,8 @@ package dzumi.app.demo.demot3h.modules.network.sample_url_http;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import org.w3c.dom.Document;
@@ -42,11 +44,21 @@ public class ReadRss extends AppCompatActivity {
         }
     }
 
-    class MyAsyncTask extends AsyncTask<URL, Void, String>{
+    void initRecyclerView(List<News> list){
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
+        NewsAdapter newsAdapter = new NewsAdapter(this, R.layout.item_rss, list);
+        recyclerView.setAdapter(newsAdapter);
+        //day la recycler view dang list
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+    }
+
+    class MyAsyncTask extends AsyncTask<URL, Void, List<News>>{
         @Override
-        protected String doInBackground(URL... params) {
+        protected List<News> doInBackground(URL... params) {
             URLConnection urlConnection = null;
-            StringBuilder total = new StringBuilder();
+            List<News> newsList = new ArrayList<>();
             try {
                 urlConnection = params[0].openConnection();
                 HttpURLConnection httpURLConnection = (HttpURLConnection) urlConnection;
@@ -54,11 +66,11 @@ public class ReadRss extends AppCompatActivity {
                 if(respCode == HttpURLConnection.HTTP_OK){
                     InputStream inputStream = httpURLConnection.getInputStream();
                     //parse xml
-                    List<News> newsList = parseRSSVnExpress(inputStream);
+                    newsList = parseRSSVnExpress(inputStream);
 
                     //test parse
-                    for(News news : newsList)
-                        Log.i(TAG, "doInBackground: " + news.toString());
+                   /* for(News news : newsList)
+                        Log.i(TAG, "doInBackground: " + news.toString());*/
 
 
                 }
@@ -66,7 +78,13 @@ public class ReadRss extends AppCompatActivity {
                 e.printStackTrace();
             }
             //TODO: xuat gia tri tra ve len textView
-            return total.toString();
+            return newsList;
+        }
+
+        @Override
+        protected void onPostExecute(List<News> newsList) {
+            super.onPostExecute(newsList );
+            initRecyclerView(newsList);
         }
     };
 
@@ -95,6 +113,12 @@ public class ReadRss extends AppCompatActivity {
                                     news.setPubDate(content);
                                     break;
                                 case News.DESCRIPTION:
+                                    //description bao gồm: image & text
+                                    //cắt chuỗi dựa vào các dấu hiệu
+                                    String temp[] = content.split("</br>");
+                                    //temp[0] chua image, temp[1] chua description
+                                    news.setDescription(temp[1].split("]]>")[0].trim());
+                                    news.setImageLink(temp[0].split("src=\"")[1].split("\"")[0].trim());
 //                                    news.setTitle(content);
                                     break;
                                 case News.LINK:

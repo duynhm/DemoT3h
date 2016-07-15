@@ -17,7 +17,7 @@ public class News {
 
     @Override
     public String toString() {
-        return title + " / " + link + "  / " + pubDate ;
+        return title + " / " + link + "  / " + pubDate + " / " + description + " / " + imageLink ;
     }
 
     public News() {

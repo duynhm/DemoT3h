@@ -68,4 +68,5 @@ dependencies {
     compile dependencies.rxandroid
     compile 'com.google.android.gms:play-services-ads:9.0.0'
     compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
