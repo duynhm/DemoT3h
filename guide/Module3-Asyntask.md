@@ -17,6 +17,7 @@
    + Tham khảo hướng dẫn và thực hiện mini game: http://www.edu4java.com/en/androidgame/androidgame1.html
    + fix bug //TODO
 
- - Source: ./modules/thread
+ - [Source][source]: ./modules/thread
 
-[asynctask]:https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png
+[asynctask]:https://github.com/duynhm/DemoT3h/blob/master/guide/img/Asyntask.PNG
+[source]: https://github.com/duynhm/DemoT3h/tree/master/app/src/main/java/dzumi/app/demo/demot3h/modules/thread
