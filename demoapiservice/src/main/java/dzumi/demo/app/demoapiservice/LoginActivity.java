@@ -74,13 +74,13 @@ public class LoginActivity extends AppCompatActivity {
     public void login() {
         Log.d(TAG, "Login");
 
-        if (!validate()) {
+       /* if (!validate()) {
             onLoginFailed();
             return;
         }
 
         btnLogin.setEnabled(false);
-
+*/
         final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this);
         progressDialog.setIndeterminate(true);
         progressDialog.setMessage("Authenticating...");
@@ -91,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
 
         // TODO: Implement your own authentication logic here.
         demoAPIService = (DemoAPIService)
-                APIServiceBuilder.buildAPIService(this, "http://10.0.3.2:8080/");
+                APIServiceBuilder.buildAPIService(this, Constants.DOMAIN);
 
         User user = new User();
         user.setUserName(email);
