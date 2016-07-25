@@ -8,10 +8,13 @@ package com.example.Dzumi.myapplication.backend.modules;
 
 import com.example.Dzumi.myapplication.backend.lib.JSONException;
 import com.example.Dzumi.myapplication.backend.lib.JSONObject;
+import com.example.Dzumi.myapplication.backend.model.User;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServlet;
@@ -38,14 +41,22 @@ public class Login extends HttpServlet implements Base{
     }
 
     Map<String,String> users;
-
+    Map<String, User> userList;
     void initUsers(){
         users = new HashMap<>();
         users.put("t3h", "t3h");
         users.put("admin", "123456");
         users.put("locnguyen", "123456");
         users.put("duynguyen", "123456");
+
+        userList = new HashMap<>();
+        userList.put("t3h", new User("t3h@t3h.vn", "Trung tam tin hoc", TOKEN, 1));
+        userList.put("admin",new User("admin@t3h.vn", "admin", TOKEN, 2));
+        userList.put("locnguyen", new User("locnguyen@t3h.vn", "Loc Nguyen", TOKEN, 3));
+        userList.put("duynguyen", new User("duynguyen@t3h.vn", "Duy Nguyen", TOKEN, 4));
     }
+
+
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
@@ -70,7 +81,7 @@ public class Login extends HttpServlet implements Base{
 //            if(pass.equals("t3h") && userName.equals("t3h")){
             String val = users.get(userName);
             if(val != null && val.equals(pass)){
-                resp.getWriter().print(getJson(null,STATUS_SUCCESS, TOKEN ));
+                resp.getWriter().print(getJson(null,STATUS_SUCCESS, userList.get(userName).toJson()));
             }else
                 resp.getWriter().print(getJson("Tai khoan hoac mat khau khong hop le", STATUS_ERROR, null ));
         } catch (JSONException e) {

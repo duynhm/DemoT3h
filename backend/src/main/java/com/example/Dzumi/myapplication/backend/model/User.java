@@ -1,33 +1,39 @@
-package dzumi.demo.app.demoapiservice.model;
+package com.example.Dzumi.myapplication.backend.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-import dzumi.demo.app.demoapiservice.model.response.BaseResponse;
+import com.example.Dzumi.myapplication.backend.lib.JSONException;
+import com.example.Dzumi.myapplication.backend.lib.JSONObject;
 
 /**
  * Created by Dzumi on 7/24/2016.
  */
 public class User {
-    @SerializedName("userID")
-    @Expose (serialize = false)
     long userID;
-    @SerializedName("pass")
-    @Expose (deserialize = false)
     String password;
-    @SerializedName("fullName")
-    @Expose (serialize = false)
     String fullName;
-    @SerializedName("token")
-    @Expose (serialize = false)
     String token;
-    @SerializedName("email")
-    @Expose
     String email;
-
-    @SerializedName("user_name")
-    @Expose
     String userName;
+
+    public User(String email, String fullName, String token, long userID) {
+        this.email = email;
+        this.fullName = fullName;
+        this.token = token;
+        this.userID = userID;
+    }
+
+    public JSONObject toJson(){
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("userID", userID);
+            jsonObject.put("fullName", fullName);
+            jsonObject.put("token", token);
+            jsonObject.put("email", email);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
 
     public String getUserName() {
         return userName;

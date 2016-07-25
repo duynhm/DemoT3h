@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class APIServiceBuilder {
     //cấu hình phương thức kết nối server, phương thức parse data,...
-    public static APIServiceBuilder buildAPIService(Context context, String domain){
+    public static DemoAPIService buildAPIService(Context context, String domain){
         //view log retrofit
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
@@ -33,6 +33,6 @@ public class APIServiceBuilder {
                 .client(httpClient) //okhttp
                 .build();
 
-        return retrofit.create(APIServiceBuilder.class);
+        return retrofit.create(DemoAPIService.class);
     }
 }

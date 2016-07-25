@@ -7,6 +7,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Dzumi on 7/24/2016.
  */
 public class BaseResponse {
+    public static final int STATUS_SUCCESS = 200;
     @SerializedName("message")
     @Expose
     String message;

@@ -41,7 +41,7 @@ public class NetworkRequest {
                         baseResponse.setMessage(throwable.getMessage());
                         baseResponse.setStatus(0);
                     }
-                    return null;
+                    return baseResponse;
                 })
                 .subscribe(onNext);
     }
