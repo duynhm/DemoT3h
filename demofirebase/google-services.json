@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "707508902452",
+    "firebase_url": "https://freelancer-1325.firebaseio.com",
+    "project_id": "freelancer-1325",
+    "storage_bucket": "freelancer-1325.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707508902452:android:10b3df6f4b8281b6",
+        "android_client_info": {
+          "package_name": "dzumi.demo.app.demofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707508902452-00s9cscuejq2gqmk6fa68sfk2f2lgd54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dzumi.demo.app.demofirebase",
+            "certificate_hash": "63318E9C923452E0685C205DD4BFEC2959E73C8C"
+          }
+        },
+        {
+          "client_id": "707508902452-oqd84palbtph2dp19gmdonbe0k5teoln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu4sK-DOXp762DI5hcaH7ZpbkGheWkNuY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707508902452-oqd84palbtph2dp19gmdonbe0k5teoln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
