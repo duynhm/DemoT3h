@@ -402,7 +402,8 @@
 
         <receiver android:name=".modules.app_components.broadcast_receiver.NetworkReceiver" />
 
-        <activity android:name=".modules.network.sample_url_http.ReadRss"
+        <activity
+            android:name=".modules.network.sample_url_http.ReadRss"
             android:label="@string/title_activity_demo_Rss_Vnexpress">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -410,11 +411,19 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.network.sample_url_http.DemoSampleHttp"
+        <activity
+            android:name=".modules.network.sample_url_http.DemoSampleHttp"
             android:label="@string/title_activity_demo_sample_http">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.media.DemoMediaPlayerAudioActivity"
+            android:label="@string/title_activity_demo_media_player_audio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>

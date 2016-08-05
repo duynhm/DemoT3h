@@ -57,4 +57,6 @@
     <string name="title_activity_demo_sample_http">Network/Sample Http</string>
     <string name="title_activity_demo_Rss_Vnexpress">Network/Rss Vnexpress</string>
 
+    <!--Demo media-->
+    <string name="title_activity_demo_media_player_audio">Media/Audio Player</string>
 </resources>
