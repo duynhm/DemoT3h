@@ -28,6 +28,7 @@
 
     <!--module Telephone&SMS/Telephone-->
     <string name="title_activity_sample_call_log">11.Telephones &amp; SMS/01.Telephones/Sample Call Log</string>
+    <string name="title_activity_sample_sms">11.Telephones &amp; SMS/02.SMS/Sample SMS</string>
     <!--module storage-->
     <!--sqlite db-->
     <string name="title_activity_storage_sqlite_sample1">06.Data Storage/03. SQLite/Sample 1 </string>

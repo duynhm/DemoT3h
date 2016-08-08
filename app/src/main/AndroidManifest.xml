@@ -15,7 +15,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" />
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
-
+    <!--<uses-permission android:name="android.permission.READ_SMS"/>-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-feature android:name="android.hardware.telephony" />
 
     <application
@@ -97,6 +99,17 @@
         <activity
             android:name=".modules.telephone_and_sms.SampleCallLog"
             android:label="@string/title_activity_sample_call_log"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".modules.telephone_and_sms.SampleSMS"
+            android:label="@string/title_activity_sample_sms"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
