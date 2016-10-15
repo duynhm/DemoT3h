@@ -18,6 +18,9 @@ import dzumi.app.demo.demot3h.R;
 import dzumi.app.demo.demot3h.modules.app_components.content_provider.model.Contact;
 import dzumi.app.demo.demot3h.modules.app_components.content_provider.model.Phone;
 
+/**
+ * Activity is error if app was approve permission (Android 6.)
+ */
 public class DemoContactListActivity extends AppCompatActivity {
     private static final String TAG = "CONTACT";
     ListView listView;

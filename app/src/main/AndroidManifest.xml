@@ -15,9 +15,10 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" />
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
-    <!--<uses-permission android:name="android.permission.READ_SMS"/>-->
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- <uses-permission android:name="android.permission.READ_SMS"/> -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <uses-feature android:name="android.hardware.telephony" />
 
     <application
@@ -71,7 +72,8 @@
         </activity>
         <activity
             android:name=".modules.HelloWorld"
-            android:label="@string/title_activity_hello_world">
+            android:label="@string/title_activity_hello_world"
+            android:allowTaskReparenting="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -106,7 +108,6 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".modules.telephone_and_sms.SampleSMS"
             android:label="@string/title_activity_sample_sms"
@@ -433,12 +434,29 @@
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.media.DemoMediaPlayerAudioActivity"
+        <activity
+            android:name=".modules.media.DemoMediaPlayerAudioActivity"
             android:label="@string/title_activity_demo_media_player_audio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="dzumi.intent.category.DEMO" />
             </intent-filter>
+        </activity>
+        <activity android:name=".modules.app_components.notification.MainNotificationActivity"
+            android:label="@string/title_activity_demo_notification"
+            android:parentActivityName=".modules.HelloWorld">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="dzumi.intent.category.DEMO" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".modules.HelloWorld"/>
+        </activity>
+        <activity android:name=".modules.app_components.notification.NotificationActivity">
+
         </activity>
     </application>
 

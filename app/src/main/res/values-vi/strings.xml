@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Demo Android</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!--string module app components-->
+    <string name="btn_services">Services</string>
+    <string name="btn_content_providers">Content Providers</string>
+    <string name="btn_notifications">Notifications</string>
+    <string name="tv_overviews_app_components">Turn on/off network for test Broadcast Receiver.
+    <![CDATA[Note: Must request the following permissions: <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>]]></string>
+
+    <!--string module broadcast receiver-->
+    <string name="notice_disconnect_network">Kiểm tra kết nối mạng và thử lại.</string>
+    <string name="notice_connected_network">Kết nối mạng thành công</string>
+
+    <!--string module content provider-->
+    <string name="note_use_read_contact"><![CDATA[Ghi chú: Yêu cầu cấp quyền: <uses-permission android:name="android.permission.READ_CONTACTS"/>]]></string>
+
+    <!--sqlite-->
+    <!--shared preferences-->
+    <string name="sample_sharedPref_default">Xin chào!</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+
+    <string name="title_activity_activity_demo_fragment">ActivityDemoFragment</string>
+
+    <!--practice1-->
+    <string name="tab_login">Đăng nhập</string>
+    <string name="tab_register">Đăng kí</string>
+    <string name="title_activity_practice_main">PracticeMain</string>
+    <string name="title_hello">Xin chào %ssss</string>
+
+
+    <!--demo animation-->
+    <string name="title_activity_property_animations">PropertyAnimations</string>
+    <string name="alpha">Alpha</string>
+    <string name="translate">Translate</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="set">Set</string>
+
+</resources>

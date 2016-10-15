@@ -16,4 +16,7 @@
             You have %d messages.
         </item>
     </plurals>
+
+    <string name="character"> A &amp; B </string>
+
 </resources>
